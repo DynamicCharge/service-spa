@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="color-scheme" content="only light">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Сервис по отмену судебных приказов</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"> -->
+<script defer="defer" src="./assets/scripts/main.js"></script><link href="./assets/styles/main..css" rel="stylesheet"></head>
+<body>
+    <div class="body-bg">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo"><img src="assets/img/logo..svg" alt=""></a>
+                    <div class="header__wrap">
+                        <a href="mailto:prikaz@mail.ru" class="header__link">
+                            <div class="header__link__icon">
+                                <img src="assets/img/header-link1..svg" alt="">
+                                <img class="_hidden" src="assets/img/header-link1-1..svg" alt="">
+                            </div>
+                            <span>prikaz@mail.ru</span>
+                        </a>
+                        <a href="tel:+7 999 999-99-99" class="header__link">
+                            <div class="header__link__icon">
+                                <img src="assets/img/header-link2..svg" alt="">
+                                <img class="_hidden" src="assets/img/header-link2-1..svg" alt="">
+                            </div>
+                            <span>+7 999 999-99-99</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="">
+        <section class="title">
+            <div class="container">
+                <div class="title__wrap">
+                    <div class="title-left">
+                        <h1 class="title__header">Сервис по отмене судебных приказов </h1>
+                        <span class="title__desc">Как это работает:</span>
+                        <ul class="title__list">
+                            <li class="title__list__item">
+                                <div class="title__list__item__icon-box">
+                                    <span class="icon-num">1</span>
+                                    <div class="img-wrap">
+                                        <img src="assets/img/list1..png" alt="">
+                                    </div>
+                                </div>
+                                <span class="title__list__item__desc">Заполняете <br> анкету.</span>
+                            </li>
+                            <li class="title__list__item">
+                                <div class="title__list__item__icon-box">
+                                    <span class="icon-num">2</span>
+                                    <div class="img-wrap">
+                                        <img src="assets/img/list2..png" alt="">
+                                    </div>
+                                </div>
+                                <span class="title__list__item__desc">Оплачиваете <br> услугу. 1000 руб. <br>  по акции 599 руб.</span>
+                            </li>
+                            <li class="title__list__item">
+                                <div class="title__list__item__icon-box">
+                                    <span class="icon-num">3</span>
+                                    <div class="img-wrap">
+                                        <img src="assets/img/list3..png" alt="">
+                                    </div>
+                                </div>
+                                <span class="title__list__item__desc">Получаете готовое <br> заявление об <br> отмене судебного <br> приказа на вашу <br> электронную почту.  </span>
+                            </li>
+                            <li class="title__list__item">
+                                <div class="title__list__item__icon-box">
+                                    <span class="icon-num">4</span>
+                                    <div class="img-wrap">
+                                        <img src="assets/img/list4..png" alt="">
+                                    </div>
+                                </div>
+                                <span class="title__list__item__desc">Распечатываете <br> и подписываете <br> заявление.</span>
+                            </li>
+                            <li class="title__list__item">
+                                <div class="title__list__item__icon-box">
+                                    <span class="icon-num">5</span>
+                                    <div class="img-wrap">
+                                        <img src="assets/img/list5..png" alt="">
+                                    </div>
+                                </div>
+                                <span class="title__list__item__desc">Подаете или <br> направляете почтой <br> подписанное заявление</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="assets/img/hero..png" alt="" class="title-right">
+                    <img src="assets/img/hero-mob..png" alt="" class="title-right _mob">
+
+                </div>
+                <div class="title__bottom">
+                    <button class="title__main-button" data-open-modal="main-form">Отменить судебный приказ</button>
+                    <div class="title__bottom__average">
+                        <span class="title__average">УЖЕ ОТМЕНЕНО <span class="_big">ПРИКАЗОВ</span></span>
+                        <span class="title__score">455 шт</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-form" style="display: none;">
+            <div class="main-form__header">
+                <div class="main-form__header__wrapper">
+                    <span class="main-form__headline">Заполните данные</span>
+                    <button class="main-form__close" data-close="modal"></button>
+                </div>
+                <div class="main-form__header__progress">
+                    <div class="main-form__header__progress__bar"></div>
+                </div>
+            </div>
+            <form class="form" id="newForm">
+                <div class="stage1 stage" data-stage="1">
+                    <div class="main-form__body">
+                        <div class="main-form__body__group">
+                            <span class="main-form__body__header">Сведения о должнике: </span>
+                            <div class="main-form__body__wrapper _four">
+                                <input type="text" name="Фамилия" data-required placeholder="Фамилия *" class="main-form__body__input">
+                                <input type="text" name="Имя" data-required placeholder="Имя *" class="main-form__body__input">
+                                <input type="text" name="Отчество" data-required placeholder="Отчество *" class="main-form__body__input">
+                                <input type="text" name="Дата рождения" data-required placeholder="Дата рождения *" class="main-form__body__input">
+                            </div>
+                        </div>
+                        <div class="main-form__body__group">
+                            <span class="main-form__body__header">Почтовый адрес должника:</span>
+                            <div class="main-form__body__wrapper _four">
+                                <input type="text" name="Адрес должника" data-required placeholder="Адрес должника *" class="main-form__body__input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-form__body__nav">
+                        <p class="main-form__next" data-stage-nav="next">Далее</p>
+                    </div>              
+                </div>
+                <div class="stage2 stage" data-stage="2" style="display: none;">
+                    <div class="main-form__body">
+                        <div class="main-form__body__group">
+                            <span class="main-form__body__header">Сведения о суде:</span>
+                            <div class="main-form__body__wrapper _one">
+                                <label class="main-form__body__field-label">
+                                    <input type="text" name="Наименование судебного участка мирового судьи" data-required placeholder="Наименование судебного участка мирового судьи *" class="main-form__body__input">
+                                    <div class="main-form__select">
+                                        <div class="main-form__select__icon">
+                                            <div class="main-form__select__icon__item"></div>
+                                        </div>
+                                        <ul class="main-form__select__list" style="display: none;">
+                                            <li class="main-form__select__list__item">test1</li>
+                                            <li class="main-form__select__list__item">test2</li>
+                                            <li class="main-form__select__list__item">test3</li>
+                                            <li class="main-form__select__list__item">test4w</li>
+                                            <button class="main-form__close" data-close="select"></button>
+                                        </ul>
+                                    </div>
+                                </label>
+                                <input type="text" name="Адрес судебного участка мирового судьи" data-required placeholder="Адрес судебного участка мирового судьи *" class="main-form__body__input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-form__body__nav">
+                        <button class="main-form__prev" data-stage-nav="prev">Назад</button>
+                        <button class="main-form__next" data-stage-nav="next">Далее</button>
+                    </div> 
+                </div>
+                <div class="stage3 stage" data-stage="3" style="display: none;">
+                    <div class="main-form__body">
+                        <div class="main-form__body__group">
+                            <span class="main-form__body__header">Сведения о судебном приказе:</span>
+                            <div class="main-form__body__wrapper _three">
+                                <input type="text" name="Номер судебного приказа" data-required placeholder="Номер судебного приказа *" class="main-form__body__input">
+                                <input type="text" name="Дата получения судебного приказа" data-required placeholder="Дата получения судебного приказа *" class="main-form__body__input">
+                                <input type="text" name="Даты когда вам стало известном о судебном приказе" data-required placeholder="Даты когда вам стало известном о судебном приказе *" class="main-form__body__input">
+                            </div>
+                        </div>
+                        <div class="main-form__body__group">
+                            <span class="main-form__body__header">Каким образом вы узнали о судебном приказе?</span>
+                            <div class="main-form__body__wrapper _one">
+                                <label class="main-form__body__field-label">
+                                    <input type="text" name="Каким образом вы узнали о судебном приказе" data-required placeholder="Ничего не выбрано *" class="main-form__body__input">
+                                    <div class="main-form__select">
+                                        <div class="main-form__select__icon">
+                                            <div class="main-form__select__icon__item"></div>
+                                        </div>
+                                        <ul class="main-form__select__list" style="display: none;">
+                                            <li class="main-form__select__list__item">На сайте службы судебных приставов</li>
+                                            <li class="main-form__select__list__item">На сайте или в мобильном приложении Госуслуг</li>
+                                            <li class="main-form__select__list__item">Когда наложили арест на банковские счета</li>
+                                            <li class="main-form__select__list__item">Когда удержали денежные средства </li>
+                                            <li class="main-form__select__list__item">Когда получили судебный приказ по почте</li>
+                                            <li class="main-form__select__list__item">При личном визите в ФССП</li>
+                                            <li class="main-form__select__list__item">При личном визите в суд</li>
+                                            <li class="main-form__select__list__item">Свой вариант</li>
+                                            <button class="main-form__close" data-close="select"></button>
+                                        </ul>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-form__body__nav">
+                        <button class="main-form__prev" data-stage-nav="prev">Назад</button>
+                        <button class="main-form__next" data-stage-nav="next">Далее</button>
+                    </div>                    
+                </div>  
+                <div class="stage4 stage" data-stage="4" style="display: none;">
+                    <div class="main-form__body">
+                        <div class="main-form__body__group">
+                            <div class="main-form__body__wrapper _one">
+                                <input type="text" name="Email" data-required placeholder="Email, куда направить готовое возмещение " class="main-form__body__input">
+                                <input type="text" name="Номер телефона" placeholder="Номер телефона" class="main-form__body__input">
+                                <label class="main-form__body__label">
+                                    <input type="checkbox" data-required="" class="main-form__body__check">
+                                    <div class="main-form__body__custom-check"></div>
+                                    <a href="#" class="main-form__body__link">Вы соглашаетесь с условиями и политикой конфиденциальности</a>
+                                </label>
+                                <span class="error-message">Заполните все обязательные поля, чтобы продолжить.</span>
+
+                            </div>
+                        </div>
+                        <div class="main-form__body__nav">
+                            <button class="main-form__prev" data-stage-nav="prev">Назад</button>
+                            <button class="main-form__next" type="submit">Получить заявление</button>
+                        </div>
+                    </div>
+                </div>               
+            </form>
+        </div>
+        </main>
+    </div>
+</body>
+
+</html>
